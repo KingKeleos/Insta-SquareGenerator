@@ -4,9 +4,6 @@ from setup import setup
 
 
 def loadDirectory(directory):
-    if directory == "":
-        print("No input of directory, using default location")
-        directory = setup.directory
     try:
         images = listDirectory(directory)
         return images
