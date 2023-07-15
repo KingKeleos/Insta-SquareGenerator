@@ -18,5 +18,8 @@ def listDirectory(directory):
             print(f"Found File: {os.path.join(root, name)}")
             im = Image.open(os.path.join(root, name))
             images.append(im)
+    
+    if len(images) == 0:
+        print("Unable to find any images.")
     return images
     
