@@ -30,3 +30,12 @@ This software is just there to create the square images.
 It will not take care of your photos.
 It will also overwrite the photos, if you put the same directory for source and destination.
 Also the files in the destination directory will be overwritten, as the names are just generated through a counter.
+
+## How to run
+
+You can easily start the software using `python`
+using the command 
+```
+python main.py
+```
+while being in the directory of the files, it will be executed.

@@ -14,7 +14,7 @@ def main():
         print("No input of directory, using default location")
         directory = setup.directory
     if not os.path.exists(directory):
-        print(f"Location {directory} does note exist... creating")
+        print(f"Location {directory} does not exist... creating")
         os.makedirs(directory)
 
     squares = loader.loadDirectory(directory=directory)
@@ -30,7 +30,7 @@ def main():
         print("No input of directory, using default location")
         destination = setup.destination
     if not os.path.exists(destination):
-        print(f"Location {destination} does note exist... creating")
+        print(f"Location {destination} does not exist... creating")
         os.makedirs(destination)
 
     renderer.render(merges, destination=destination)
