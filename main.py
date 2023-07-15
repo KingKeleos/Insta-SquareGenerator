@@ -25,6 +25,14 @@ def main():
     merges = renderer.mergeImages(squares=squares, crops=crops)
     print(f"Set the destination for the files, current destination: {setup.destination}")
     destination = input("Destination Location: ")
+
+    if destination == "":
+        print("No input of directory, using default location")
+        destination = setup.destination
+    if not os.path.exists(destination):
+        print(f"Location {destination} does note exist... creating")
+        os.makedirs(destination)
+
     renderer.render(merges, destination=destination)
 
 if __name__ == "__main__":
